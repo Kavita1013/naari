@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Responsive Registration Form | CodingLab </title>
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Business Name</span>
+            <input type="text" placeholder="Enter your business name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Type of business</span>
+            <input type="text" placeholder="Enter type of your business" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" placeholder="Enter your address" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Business Details</span>
+            <input type="text" placeholder="Enter your business description" required>
+          </div>
+        </div>
+        
+        
+        <dialog style="justify-content: center;align-items: center;"> <p>   Great! We will shortly verify your details.Further details would be communicated through mail and sms.     </p>
+           <button id="close" class="close" ><a href="http://127.0.0.1:5503/index.html"> Close</a></button> 
+          </dialog>
+           <button id="show" class="register">Register</button>
+            <script> /* Thanks to Eiji Kitamura for the dialog demo which you can see at https://demo.agektmr.com/dialog/ */
+             var dialog = document.querySelector('dialog');
+              document.querySelector('#show').onclick = function() {
+                 dialog.show(); }; document.querySelector('#close').onclick = function() { dialog.close(); }; </script>
+
+
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
+
